@@ -21,29 +21,30 @@ function determinarNivel(xp) {
 }
 
 function consultarNivel() {
-
-    // Obtém os valores dos campos de entrada
     let nomeHeroi = document.getElementById('username').value;
     let xpHeroi = parseInt(document.getElementById('userxp').value);
 
-    // Verifica se o XP é um número válido
     if (isNaN(xpHeroi)) {
         alert("Por favor, insira um valor numérico para XP.");
         return;
     }
 
-    // Exibe o elemento 'result' e oculta o elemento 'form
     document.getElementById("result").style.display = "inline-block";
     document.getElementById("form").style.display = "none";
 
-    // Determina o nível do herói
     let nivel = determinarNivel(xpHeroi);
-
-    // Adiciona o herói ao array
     herois.push({ nome: nomeHeroi, xp: xpHeroi });
 
- 
-    // Exibe o resultado na tela
     let resultadoDiv = document.getElementById('result');
-    resultadoDiv.innerHTML = `O Herói de nome ${nomeHeroi} está no nível de ${nivel}`;
+    resultadoDiv.querySelector('p').innerText = `O Herói de nome ${nomeHeroi} está no nível de ${nivel}`;
+}
+
+function voltar() {
+    // Exibe o formulário e oculta o resultado
+    document.getElementById("form").style.display = "block";
+    document.getElementById("result").style.display = "none";
+
+    // Limpa os campos de entrada
+    document.getElementById('username').value = '';
+    document.getElementById('userxp').value = '';
 }
