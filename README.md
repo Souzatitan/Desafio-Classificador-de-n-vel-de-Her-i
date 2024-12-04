@@ -1,6 +1,7 @@
 # Desafio Classificador de Nível de Herói
 
-Este projeto é resultado da atividade prática proposta no bootcamp Ri Happy - Front-end do Zero. Ao realizar este projeto, adaptei meus conhecimentos em HTML5, CSS3 e JavaScript para enfrentar o desafio proposto, adicionando elementos gráficos e responsividade.
+
+Este projeto foi desenvolvido como parte da atividade prática do bootcamp Ri Happy - Front-end do Zero. Durante sua criação, utilizei e aperfeiçoei meus conhecimentos em HTML5, CSS3 e JavaScript para superar o desafio apresentado. Além disso, implementei elementos visuais, responsividade e um botão de retorno para permitir que o usuário reinicie o jogo.
 
 ## 🛠️ Tecnologias
 
